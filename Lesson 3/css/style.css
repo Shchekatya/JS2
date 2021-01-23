@@ -1,0 +1,129 @@
+
+body{
+    
+}
+
+header{
+    padding: 30px 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    padding: 30px 80px;
+}
+
+.btn-cart{
+    appearance: none;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    background: #4676D7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.btn-cart:hover{
+    background: #7fa4f0;
+}
+
+.btn-cart:active{
+    background: #fff;
+    color: #4676D7;
+    
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item {
+    width: 150px;
+    outline: 1px solid grey;
+    padding: 20px;
+        
+}
+
+h3{
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+p{
+    margin: 0 auto;
+    font-style: italic;
+}
+
+
+.cart{
+    position: relative;
+}
+.cart-block{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
+    border-radius: 5px;
+    box-sizing: border-box;
+    right: 0;
+    top: 130%;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    width: 300px;
+}
+
+.invisible{
+    display: none;
+}
+
+.cart-block:before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    right: 35px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+.btn-buy, .btn-del{
+    outline: none;
+    margin-top: 5px;
+    background-color: #2f2a2d;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    color: #fafafa;
+    border-radius: 5px;
+    transition: all ease-in-out .4s;
+    cursor: pointer;
+}
+.btn-buy:hover, .bth-del:hover{
+    background-color: #fafafa;
+    color: #2f2a2d;
+    border: 1px solid #2f2a2d;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+}
+.cart-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.product-bio{
+    display: flex;
+}
+.cart-item img{
+    /*align-self: flex-start;*/
+    margin-right: 15px;
+}
+  font-size: 0.5em;
+}
+.product-price{
+    margin-left: 30px;
+}
+
+.product-quantity {
+    margin-top: 15px;
+    font-size: 0.75em;
+}
